@@ -26,7 +26,7 @@ public class WeatherForecastController : ControllerBase
 
     // url --> /WeatherForecast/1
     [HttpGet("{id}")]
-    public async Task<IActionResult> Get(int id)
+    public async Task<ActionResult<WeatherForecast>> Get(int id)
     {
         WeatherForecast? weatherforecast = await _databaseContext.WeatherForecast.FindAsync(id);
         if (weatherforecast == null) return NotFound();
