@@ -1,7 +1,7 @@
-using Dot6.API.Crud.Data;
-using DotnetApi.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using DotnetApi.Database;
+using DotnetApi.Models;
 
 namespace DotnetApi.Controllers;
 

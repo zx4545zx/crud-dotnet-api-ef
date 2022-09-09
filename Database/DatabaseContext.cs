@@ -1,12 +1,13 @@
-using DotnetApi.Models;
 using Microsoft.EntityFrameworkCore;
-namespace Dot6.API.Crud.Data;
+using DotnetApi.Models;
+
+namespace DotnetApi.Database;
 
 public class DatabaseContext : DbContext
 {
-  public DatabaseContext(
-      DbContextOptions<DatabaseContext> options
-      ) : base(options){}
+    public DatabaseContext(
+        DbContextOptions<DatabaseContext> options
+        ) : base(options) { }
 
-  public DbSet<WeatherForecast> WeatherForecast { get; set; }
+    public DbSet<WeatherForecast> WeatherForecast { get; set; }
 }

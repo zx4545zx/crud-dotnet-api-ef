@@ -1,5 +1,5 @@
-using Dot6.API.Crud.Data;
 using Microsoft.EntityFrameworkCore;
+using DotnetApi.Database;
 
 var builder = WebApplication.CreateBuilder(args);
 
