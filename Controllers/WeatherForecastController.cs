@@ -22,7 +22,6 @@ public class WeatherForecastController : ControllerBase
         List<WeatherForecast>? weatherforecasts = await _databaseContext.WeatherForecast.ToListAsync();
         if (weatherforecasts == null) return NotFound();
         return Ok(weatherforecasts);
-
     }
 
     // url --> /WeatherForecast/1
